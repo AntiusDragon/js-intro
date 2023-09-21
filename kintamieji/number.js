@@ -61,3 +61,24 @@ console.log(2+2*2);
 
 const exp9 = 3**3;
 console.log(exp9);
+
+//Keisti skaiciai
+const begalybe = Infinity;
+const minusbegalybe = -Infinity;
+
+const x = 5/0;
+console.log(x);
+
+const k = -5/0;
+console.log(k);
+
+// not-a-number =NaN
+
+const n = NaN;
+console.log(n, NaN);
+
+const liekana1 = 7 % 5;
+console.log(liekana1);
+
+const liekana2 = 65 % 13;
+console.log(liekana2);
