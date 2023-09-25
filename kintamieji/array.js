@@ -45,3 +45,21 @@ const indexSum = index1 + index2 + index3 + index4 + index5 + index6
 console.log(indexSum);
 const pazymiuVidurkis = (indexSum) / (pazymiai.length);
 console.log('Studento pazymiu vidurkis yra', pazymiuVidurkis);
+
+/*
+console.log('pazimiuVidurkis', pazymiai.reduce((a, b) => a + b));
+console.log(pazymiai.indexOf);
+
+const val1 = 6;
+const val2 = 4;
+
+if (val1) {
+    console.log(val1);
+}
+
+val2 && console.log(val1);
+
+const arr1 = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6]
+console.log(new Set(arr1));
+*/
+
