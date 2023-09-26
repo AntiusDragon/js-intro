@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "function": "nodemon ./funkcijos/function.js", 
     "object": "nodemon ./kintamieji/object.js", 
     "array": "nodemon ./kintamieji/array.js", 
     "boolean": "nodemon ./kintamieji/boolean.js",

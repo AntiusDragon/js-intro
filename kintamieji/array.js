@@ -133,7 +133,7 @@ console.log('-----');
 let y = 5;
 let x = 7;
 
-// x = x + ++a; // error
-// x = x++ + a; // 14
-x = x +++ a; // 14
+// x = x + ++y; // error
+// x = x++ + y; // 14
+// x = x +++ y; // 14
 console.log(x);
