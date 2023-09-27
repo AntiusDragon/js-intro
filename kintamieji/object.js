@@ -96,3 +96,11 @@ console.log('e:', e);
 console.log('f:', f);
 
 console.log('-----');
+
+const user = {
+    name: 'Jonas',
+    age: 99,
+    'is married': true,
+}
+
+user['is married']

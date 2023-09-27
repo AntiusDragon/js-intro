@@ -1,6 +1,14 @@
 /*
 IF - palyginimo sakinys/salyga
 
+Palyginimo operatoriai:
+- visi: > , < , ==, ===, >=, <=, !=, !==
+- naudotini: > , < , ===, >=, <=, !==
+- nenaudotini: ==, !=
+
+Loginiai operatoriai:
+&&, ||, !
+
 Kodo sablonai:
 if () {}
 if () {} else {}
@@ -93,6 +101,138 @@ if (diena === 1) {
     }
 }
 
+console.log('------');
+
+/*
+Gali buti:
+- diena /naktis
+- lyja / nelyja
+console.log('Panasu, jog naktis.. 👀');
+*/
+
+const parosMetas ='diena';
+const arLyja = true;
+const temp = 25;
+const kadaSilta = 20;
+const arAsSuStriuke = false;
+
+if (parosMetas === 'diena' && arLyja && temp >= kadaSilta) {
+    console.log('Einam sokti lietuje! 😏');
+} else if (parosMetas === 'diena' && arLyja && temp < kadaSilta) {
+    console.log('Saltas lietus... niekur neisiu sokti.. 💧');
+} else if (parosMetas === 'diena' && !arLyja && temp >= kadaSilta) {
+    console.log('Eiline diena rojuje ✌️');
+} else if (parosMetas === 'diena' && !arLyja && temp < kadaSilta) {
+    console.log('Eiline diena rojuje... nors ir nelabai silta.. ✌️');
+} else if (parosMetas === 'naktis' && arLyja && temp >= kadaSilta) {
+    console.log('Siedim namie, bet gal ir galima butu iseiti 👀');
+} else if (parosMetas === 'naktis' && arLyja && temp < kadaSilta) {
+    console.log('Siedim namie!!! 👀');
+} else if (parosMetas === 'naktis' && !arLyja && temp >= kadaSilta) {
+    console.log('Galim eiti paziureti zvaigzdiu ⭐');
+} else if (parosMetas === 'naktis' && !arLyja && temp < kadaSilta) {
+    console.log('Galeisiu miegoti ⭐');
+}
+
+if (parosMetas ==='diena') {
+    if (arLyja) {
+        if (temp >= kadaSilta) {
+            if (arAsSuStriuke) {
+                console.log('Einam sokti lietuje! 😏');
+            } else {
+                console.log('Einam sokti lietuje ir suslapsim! 😏');
+            }
+        } else {
+            if (arAsSuStriuke) {
+                console.log('Saltas lietus... eisiu sokti. 💧');
+            } else {
+                console.log('Saltas lietus... niekur neisiu sokti.. 💧');
+            }            
+        }        
+    } else {
+        if (temp >= kadaSilta) {
+            if (arAsSuStriuke) {
+                console.log('Eiline diena rojuje. taciau kur dieti striuke? 😒');
+            } else {
+                console.log('Eiline diena rojuje ✌️');
+            }            
+        } else {
+            if (condition) {
+                console.log('Eiline diena rojuje... gerai, kad turiu striuke. ✌️');
+            } else {
+                console.log('Eiline diena rojuje... nors ir nelabai silta.. ✌️');
+            }            
+        }        
+    }
+} else {
+    if (arLyja) {
+        if (temp >= kadaSilta) {
+            if (arAsSuStriuke) {
+                console.log('Siedim namie, nors turiu striuke 👀');
+            } else {
+                console.log('Siedim namie, bet gal ir galima butu iseiti 👀');
+            }
+        } else {            
+            if (arAsSuStriuke) {
+                console.log('Siedim namie, nors esu su striuke 👀');
+            } else {
+                console.log('Siedim namie!!! 👀');
+            }
+        }
+    } else {
+        if (temp >= kadaSilta) {
+            if (arAsSuStriuke) {
+                console.log('Galim eiti paziureti zvaigzdiu, taciau kur dieti striuke? ⭐');
+            } else {
+                console.log('Galim eiti paziureti zvaigzdiu ⭐');
+            }
+        } else {
+            if (arAsSuStriuke) {
+                console.log('Galeisiu miegoti nors turiu stiuke ⭐');
+            } else {
+                console.log('Galeisiu miegoti ⭐');
+            }            
+        }        
+    }
+}
+
+console.log('-----');
+
+const g = 7;
+const h = 5;
+
+if (g !== h) {
+    console.log('Daugiau ar lygu');
+} else {
+    console.log('Maziau');
+}
+
+// !== vs !=
+// === (Tikrina tipus)
+// vs == (Tikrina skaicius)
 
 
 
+if (7 === '7') {
+    console.log('aa');
+} else {
+    console.log('bb');
+}
+
+const w = 'a'
+const e = 'b'
+
+if (w > e) {
+    console.log(`${w} yra daugiau uz ${e}`);
+} else {
+    console.log(`${w} yra maziau uz ${e}`);
+}
+
+console.log('\n\r-----');
+// !true
+// !false
+if (!true) {
+    console.log('gg');
+} else {
+    console.log('fail...');
+}
