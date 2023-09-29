@@ -112,24 +112,7 @@ function studentAvarage(name, marks) {
     return `${name}: pazymiu vidurkis yra ${avarage}.`;
 }
 
-
 console.log(studentAvarage('Jonas', [10, 2, 8, 4, 6]));
 console.log(studentAvarage('Maryte', [10, 9, 8, 7, 6]));
 console.log(studentAvarage('Petras', [5, 6, 7, 8, 9]));
 console.log(studentAvarage('Ona', [9, 9, 9 ,9, 9, ]));
-
-
-
-
-function testEven(n) {
-    const n0 = n % 2;
-    const n1 = true;
-    skaicius = n0 / n1 ;
-    return `tastEvent fot ${n} = ${skaicius}`;
-}
-console.log(testEven(0));
-console.log(testEven(0.5));
-console.log(testEven(1));
-console.log(testEven(2));
-console.log(testEven(-4));
-

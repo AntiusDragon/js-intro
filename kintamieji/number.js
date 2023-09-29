@@ -74,7 +74,7 @@ const x = 5/0;
 console.log(x);
 
 const k = -5/0;
-console.log(k);
+console.log("k =", k);
 
 // not-a-number =NaN
 
@@ -82,41 +82,40 @@ const n = NaN;
 console.log(n, NaN);
 
 const liekana1 = 7 % 5;
-console.log(liekana1);
+console.log("liekana1", liekana1);
 
 const liekana2 = 65 % 13;
-console.log(liekana2);
+console.log("liekana2", liekana2);
 
-// Isvalo lenta
-console.clear();
+console.log('-----');
 
 let wallet = 0;
-console.log('walet:', wallet);
+console.log('walet1:', wallet);
 
 wallet = wallet + 5;
-console.log('walet:', wallet);
+console.log('walet2:', wallet);
 
 wallet += 5;
 wallet += 5;
 wallet += 5;
-console.log('walet:', wallet);
+console.log('walet3:', wallet);
 
 wallet -= 2;
 wallet -= 2;
 wallet -= 2;
-console.log('walet:', wallet);
+console.log('walet4:', wallet);
 
 wallet += 6;
 wallet *= 2;
 wallet /= 5;
-console.log('walet:', wallet);
+console.log('walet5:', wallet);
 
 
 wallet **= 2;
-console.log('walet:', wallet);
+console.log('walet6:', wallet);
 
 wallet %= 3;
-console.log('walet:', wallet);
+console.log('walet7:', wallet);
 
 const skaicius = 256;
 const daliklis = 10;
@@ -127,7 +126,7 @@ console.log(sveikaDalis);
 
 console.log(sveikaDalis, '*', daliklis, '+', liekana3, '=', skaicius);
 
-console.clear();
+console.log('-----');
 
 let indexx = 0;
 console.log('indexx:', indexx);
@@ -144,42 +143,41 @@ console.log('indexx:', indexx);
 ++indexx;
 console.log('indexx:', indexx);
 
-// Isvalo lenta
-console.clear();
+console.log('-----');
 
 let i = 0;
-console.log(i);     // 0
-console.log(i++);   // 0 -> 1
-console.log(i);     // 1
-console.log(i++);   // 1 -> 2
-console.log(i);   // 2
+console.log('i:', i);     // 0
+console.log('i:', i++);   // 0 -> 1
+console.log('i:', i);     // 1
+console.log('i:', i++);   // 1 -> 2
+console.log('i:', i);   // 2
 
 console.log('-----');
 let i2 =0;
-console.log(i2);
-console.log(++i2);
-console.log(++i2);
-console.log(++i2);
-console.log(++i2);
-console.log(++i2);
+console.log('i2:', i2);
+console.log('i2:', ++i2);
+console.log('i2:', ++i2);
+console.log('i2:', ++i2);
+console.log('i2:', ++i2);
+console.log('i2:', ++i2);
 
 console.log('-----');
 
 let m = 0;
-console.log(m--);   // 0 -> -1
-console.log(m--);   // -1 -> -2
-console.log(m--); 
-console.log(m--); 
-console.log(m--); 
-console.log(m); 
+console.log('m:', m--);   // 0 -> -1
+console.log('m:', m--);   // -1 -> -2
+console.log('m:', m--); 
+console.log('m:', m--); 
+console.log('m:', m--); 
+console.log('m:', m); 
 
 console.log('-----');
 let m2 = 0;
-console.log(--m2);
-console.log(--m2);
-console.log(--m2);
-console.log(--m2);
-console.log(--m2);
-console.log(m2);
+console.log('m2:', --m2);
+console.log('m2:', --m2);
+console.log('m2:', --m2);
+console.log('m2:', --m2);
+console.log('m2:', --m2);
+console.log('m2:', m2);
 
 console.log('-----');

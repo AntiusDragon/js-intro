@@ -207,7 +207,7 @@ if (g !== h) {
     console.log('Maziau');
 }
 
-// !== vs !=
+// !== vs != (6aujtukas padaro i6 teigiamo i neigiama)
 // === (Tikrina tipus)
 // vs == (Tikrina skaicius)
 
