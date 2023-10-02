@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "method_string": "nodemon ./metodai/string.js",
+    "method_number": "nodemon ./metodai/number.js",
+    "test1": "nodemon ./test/test1.js",
     "for": "nodemon ./ciklas/for.js",
     "if": "nodemon ./palygynimas/if.js",
     "function": "nodemon ./funkcijos/function.js",
