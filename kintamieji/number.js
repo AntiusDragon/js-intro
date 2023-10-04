@@ -35,7 +35,7 @@ const n1 = 7
 const n2 = 5
 
 const sum = n1 + n2;
-console.log(sum);
+console.log('n1 + n2:', sum);
 
 const diff = n1 - n2;
 console.log(diff);

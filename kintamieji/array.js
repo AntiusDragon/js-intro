@@ -85,7 +85,7 @@ const pazymiuVidurkis = (indexSum) / (pazymiai.length);
 console.log('Studento pazymiu vidurkis yra', pazymiuVidurkis);
 */
 
-/*
+
 console.log('pazimiuVidurkis', pazymiai.reduce((a, b) => a + b));
 console.log(pazymiai.indexOf);
 
@@ -100,7 +100,7 @@ val2 && console.log(val1);
 
 const arr1 = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6]
 console.log(new Set(arr1));
-*/
+
 
 
 console.log('-----');

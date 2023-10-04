@@ -156,3 +156,83 @@ console.log(r3, r5);
 const r6 = 'labas';
 const r7 = r6.replaceAll('a', '_');
 console.log(r6, r7);
+
+
+console.log('\n\r------slice');
+const kopustas = 'kopustas';
+console.log('kopustas:', kopustas.slice()); // Nieko
+console.log('kopustas0:', kopustas.slice(0)); // Nieko
+console.log('kopustas 0, 0:', kopustas.slice(0, 0));
+console.log('kopustas 0, 1:', kopustas.slice(0, 1));
+console.log('kopustas 0, 2:', kopustas.slice(0, 2));
+console.log('kopustas 0, 3:', kopustas.slice(0, 3));
+console.log('kopustas 1, 3:', kopustas.slice(1, 3));
+console.log('kopustas 2, 3:', kopustas.slice(2, 3));
+console.log('kopustas -3:', kopustas.slice(-3));
+console.log('kopustas -6:', kopustas.slice(-6));
+console.log('kopustas -6, -3:', kopustas.slice(6, -3));
+console.log('kopustas 3, 6:', kopustas.slice(3, 6));
+
+console.log('\n\r------split');
+
+const pvz = 'Labas rytas suraitytas vistos koja parasytas';
+console.log(pvz.split('x'));
+console.log(pvz.split('a'));
+console.log(pvz.split(' '));
+
+const pvz2 = 'vasara';
+const pvz2PoSplit = pvz2.split('a');
+console.log('vasara:', pvz2PoSplit);
+
+console.log('\n\r');
+console.log('sasasas'.split('a'));
+console.log('sasasas'.split('s'));
+
+console.log('\n\r');
+console.log('asd'.split('x'));
+console.log(''.split('x'));
+console.log('x'.split('x'));
+console.log('labas'.split(''));
+console.log(''.split(''));
+
+console.log('\n\r------startsWith');
+console.log('Labas'.startsWith('x'));
+console.log('Labas'.startsWith('l'));
+console.log('Labas'.startsWith('L'));
+console.log('Labas'.startsWith('La'));
+console.log('Labas'.startsWith('Lab'));
+console.log('Labas'.startsWith('Labs'));
+console.log('Labas'.startsWith('Labas'));
+console.log('Labas'.startsWith(''));
+console.log(''.startsWith(''));
+
+console.log('\n\r------endsWith');
+console.log('Vasara'.endsWith('x'));
+console.log('Vasara'.endsWith('A'));
+console.log('Vasara'.endsWith('a'));
+console.log('Vasara'.endsWith('sa'));
+console.log('Vasara'.endsWith('ra'));
+console.log('Vasara'.endsWith('sara'));
+console.log('Vasara'.endsWith('vasara'));
+console.log('Vasara'.endsWith('Vasara'));
+console.log(''.endsWith(''));
+
+console.log('\n\r------toUpperCase');
+const pasaka = 'Ryto pasaka: Apie Jonuka ir Greitute.';
+const pasakaUppercase = pasaka.toUpperCase();
+const pasakaLowerCase = pasaka.toLowerCase();
+console.log(pasaka);
+console.log(pasakaUppercase);
+console.log(pasakaLowerCase);
+
+console.log('\n\r------trim');
+const tarpai = '    labas       ';
+const beTarpu = tarpai.trim();
+console.log(`'"${tarpai}"`);
+console.log(`"${beTarpu}"`);
+
+const tarpai2 = '    labas   rytas       ';
+console.log(`"${tarpai2}"`);
+console.log(`"${tarpai2.trim()}"`);
+
+console.log('\n\r------');

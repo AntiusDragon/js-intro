@@ -33,7 +33,7 @@ console.log(Number.isInteger(NaN));
 console.log(Number.isInteger(Infinity));
 console.log(Number.isInteger(-Infinity));
 
-console.log('\n\r-----');
+console.log('\n\r-----7.7');
 const b = 7.7;
 
 if (isFinite(b) && Number.isInteger(b)) {
