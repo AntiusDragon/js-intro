@@ -58,3 +58,90 @@ console.log(lookLineName('5Azuolas'), false);
 console.log(lookLineName('Azuolas5'), false);
 console.log(lookLineName('Azuo9las'), false);
 console.log(lookLineName('Egle'), true);
+
+console.log('\n\r------');
+function isName(name) {
+    if (typeof name !== 'string') {
+        return 'Klaida: netinkamas duomens ipas, privalo butis "string".';
+    }
+
+    const minNameLength = 2;
+    if (name.length < minNameLength) {
+        return `Klaida: per trumpas vardas; minimum ${minNameLength} simboliai`;
+    }
+
+    const MaxNameLength = 20;
+    if (name.length > MaxNameLength) {
+        return `Klaida: per trumpas vardas; maximum ${MaxNameLength} simboliai`;
+    }
+
+    const pirmaRaide = name[0];
+    if (pirmaRaide[0].toUpperCase() !== pirmaRaide[0]) {
+        return 'Klaida: Pirma raide privalo buti didzioji';
+    }
+
+    const likusiosRaides = name.slice(1);
+    if (likusiosRaides.toLocaleLowerCase() !== likusiosRaides) {
+        return 'Klaida: likusios (apart pirmos) raides privalo buti mazosios';
+    }
+
+    const abc = 'qwertyuiopasdfghjklzxcvbnm';
+    const ABC = abc.toUpperCase();
+    const nameLowercase = name. toLocaleLowerCase();    
+    for (let i = 0; i < nameLowercase.length; i++) {
+        const raide = nameLowercase[i];
+
+        if (abc.includes(raide)) {
+            return `Klaida: neleistinas simbolis varde "${raide}"`;
+        }
+    }
+    return 'Ok';
+}
+
+console.log(isName());
+console.log(isName(undefined));
+console.log(isName(13));
+console.log(isName(NaN));
+console.log(isName(Infinity));
+console.log(isName(true));
+console.log(isName(false));
+console.log(isName([]));
+console.log(isName({}));
+console.log(isName(isName), '\n\r');
+
+console.log(isName(''));
+console.log(isName('L'));
+console.log(isName('Liiiiiiiiiiiiiiiiiiii'));
+console.log(isName('marYte'));
+console.log(isName('JonAs'), '\n\r');
+
+console.log(isName('Jonas'));
+console.log(isName('9onas'));
+console.log(isName('👀'));
+console.log(isName('J nas'), '\n\r');
+
+console.log(isName('Li'));
+console.log(isName('Jonas'));
+
+console.log('\n\r-----');
+
+const miestas = 'Miestas';
+let error = '';
+
+if (miestas.length < 10) {
+    error += 'Per trumpas pavadinimas; ';
+}
+
+if (miestas.length > 20) {
+    error += 'Per ilgas pavadinimas; ';
+}
+
+if (miestas[0].toUpperCase() !== miestas[0]) {
+    error += 'Pirmas simbolis turi buti didzioji raide; ';
+}
+
+if (error === '') {
+    console.log('OK!!!');
+} else {
+    console.log(error);
+}
