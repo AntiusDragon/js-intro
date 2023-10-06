@@ -6,11 +6,13 @@
   "scripts": {
     "uzd_vardas": "nodemon ./uzd/vardas.js",
     "uzd_tarpai": "nodemon ./uzd/tarpai.js",
+    "method_array": "nodemon ./metodai/array.js",
     "method_string": "nodemon ./metodai/string.js",
     "method_number": "nodemon ./metodai/number.js",
     "test1": "nodemon ./test/test1.js",
     "for": "nodemon ./ciklas/for.js",
     "if": "nodemon ./palygynimas/if.js",
+    "arrow": "nodemon ./funkcijos/arrow.js",
     "function": "nodemon ./funkcijos/function.js",
     "object": "nodemon ./kintamieji/object.js",
     "array": "nodemon ./kintamieji/array.js",
