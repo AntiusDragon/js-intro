@@ -11,6 +11,7 @@
     "method_number": "nodemon ./metodai/number.js",
     "test1": "nodemon ./test/test1.js",
     "for": "nodemon ./ciklas/for.js",
+    "ternary": "nodemon ./palygynimas/ternary.js",
     "if": "nodemon ./palygynimas/if.js",
     "arrow": "nodemon ./funkcijos/arrow.js",
     "function": "nodemon ./funkcijos/function.js",
