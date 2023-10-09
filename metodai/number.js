@@ -2,7 +2,7 @@
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 */
 console.clear();
-
+console.log('-----isFinite');
 console.log(isFinite(5));
 console.log(isFinite(3.14));
 
@@ -15,14 +15,14 @@ console.log(isFinite(NaN));
 console.log(isFinite(Infinity));
 console.log(isFinite(-Infinity));
 
-const a = 7;
+const a = 1;
 if (isFinite(a)) {
     console.log('Taip');
 } else {
     console.log('Ne');
 }
 
-console.log('\n\r-----');
+console.log('\n\r-----isInteger');
 console.log(Number.isInteger(5));
 console.log(isFinite(5));
 console.log(Number.isInteger(3.14));
@@ -54,7 +54,7 @@ if (isFinite) {
     console.log('Ne normalus skaicius: NaN arba Infinity');
 }
 
-console.log('\n\r-----');
+console.log('\n\r-----parseInt');
 
 console.log(parseInt(false));
 console.log(parseInt([]));
