@@ -460,3 +460,238 @@ console.log(noIfsNoButs(1, 1), "1 is equal to 1");
 console.log(noIfsNoButs(100, 100), "100 is equal to 100");
 console.log(noIfsNoButs(100, 80), "100 is greater than 80");
 console.log(noIfsNoButs(20, 19), "20 is greater than 19");
+
+console.log('\n\r-----CodeWars20');
+function SubstringTest(str1, str2){
+  const str11 = str1.toLowerCase();
+  const str22 = str2.toLowerCase();
+  for (let i = 0; i < str2.length; i++) {
+    const str23 = str22[i];
+
+    if (!str11.includes(str23)) {
+      return false;
+    }
+  }
+  return true;
+}
+
+
+console.log(SubstringTest("Something","Home"), true);
+console.log(SubstringTest("Something","Fun"), false);
+
+console.log('\n\r-----CodeWars21');
+function excludingVatPrice(price){
+  if (price === null) {
+    return -1;
+  }
+  const price1 = price / 115 * 100;
+  const price2 = price1.toFixed(2);
+  const price3 = Number(price2);
+  return price3;
+}
+
+console.log(excludingVatPrice(230), 200.00);
+console.log(excludingVatPrice(123), 106.96);
+console.log(excludingVatPrice(0), -1);
+
+console.log('\n\r-----CodeWars22');
+function findMissing(arr1, arr2) {
+  const arr10 = arr1.sort();
+  const arr20 = arr2.sort();
+  let arr01 = [];
+  let arr02 = [];
+
+  for (let i = 0; i < arr1.length; i++) {
+    const arr11 = arr1[i]
+    if (arr10[i] - arr20[i] === 0) {
+      continue
+    } else {
+      return arr1[i];
+    }
+  }
+}
+
+console.log(findMissing([1, 2, 3], [1, 3]), 2);
+console.log(findMissing([6, 1, 3, 6, 8, 2], [3, 6, 6, 1, 2]), 8);
+console.log(findMissing([7], []), 7);
+console.log(findMissing([4, 3, 3, 61, 8, 8], [8, 61, 8, 3, 4]), 3);
+console.log(findMissing([0, 0, 0, 0, 0], [0, 0, 0, 0]), 0);
+
+console.log('\n\r-----CodeWars22');
+function tetration(x,y){
+  let xSum1 = x;
+  if (y === 0) {
+    return 1;
+  } else {
+    for (let i = 1; i < y; i++) {
+      xSum1 = x ** xSum1;
+    }
+  }
+  return xSum1;
+}
+
+console.log(tetration(4,0), 1);
+console.log(tetration(7,1), 7);
+console.log(tetration(5,2), 3125);
+console.log(tetration(2,3), 16);
+
+
+console.log('\n\r-----CodeWars23');
+function asd1(a, b) {
+  let ab1 = [];
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] < b[i]) {
+      ab1 = [...ab1, ...b];
+    } else {
+      ab1 = [...ab1, ...a];
+    }
+  }
+  return 1;
+}
+
+console.log(asd1([13, 64, 15, 17, 88], [23, 14, 53, 17, 80]), [23, 64, 53, 17, 88]);
+console.log(asd1([34, -64, 15, 17, 88], [23, 14, 53, 17, 80]), [34, 14, 53, 17, 88]);
+
+console.log('\n\r-----CodeWars24');
+function removeChar(str){
+  return str.slice(1, str.length - 1)
+ };
+ 
+ console.log(removeChar('eloquent'), 'loquen');
+ console.log(removeChar('country'), 'ountr');
+ console.log(removeChar('person'), 'erso');
+ console.log(removeChar('place'), 'lac');
+ console.log(removeChar('ooopsss'), 'oopss');
+
+ console.log('\n\r-----CodeWars25');
+function grow(x){
+  let sum = 1;
+  for (let i = 0; i < x.length; i++) {
+    sum *= x[i];
+ }
+ return sum;
+}
+
+console.log(grow([1, 2, 3]), 6);
+console.log(grow([4, 1, 1, 1, 4]), 16); 
+console.log(grow([2, 2, 2, 2, 2, 2]), 64); 
+
+console.log('\n\r-----CodeWars26');
+// const sekmadienis = 'Sunday';
+// const pirmadienis = 'Monday';
+// const antradienis = 'Tuesday';
+// const treciadienis = 'Wednesday';
+// const ketvirtadienis = 'Thursday';
+// const penktadienis = 'Friday';
+// const sestadienis = 'Saturday';
+// const wrong = 'Wrong, please enter a number between 1 and 7';
+// const dayList = [sekmadienis, pirmadienis, antradienis, treciadienis, ketvirtadienis, penktadienis, sestadienis];
+// function whatday(num) { 
+//   if (num <= 0) {
+//     return wrong;
+//   }
+//   if (num === undefined) {
+//     return wrong;
+//   }
+
+//   for (let i = 0; i < dayList.length; i++) {
+//     if (num > 7) {
+//       return wrong;
+//     } else {
+//       if (num === i + 1) {
+//         return dayList[i];
+//       } else {
+//         continue;
+//       }
+//     }
+//   }
+// }
+
+const whatday = (num) => { 
+  var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  return days[num - 1] || 'Wrong, please enter a number between 1 and 7';
+}
+
+console.log(whatday(1),'Sunday')
+console.log(whatday(2), 'Monday')
+console.log(whatday(3),'Tuesday')
+console.log(whatday(8),  'Wrong, please enter a number between 1 and 7')
+console.log(whatday(),  'Wrong, please enter a number between 1 and 7')
+
+console.log('\n\r-----CodeWars27');
+const bloodAlcoholContent = (drinks, weight, sex, time) => 
++((drinks.ounces * drinks.abv * 5.14 / weight * (sex === 'male' ?0.73 :0.66)) - 0.015 * time).toFixed(4);
+
+console.log(bloodAlcoholContent({ounces:12.5, abv:0.4}, 190, 'male', 1), 0.0837);
+console.log(bloodAlcoholContent({ounces:180, abv:0.05}, 160,'female', 1), 0.1758);
+console.log(bloodAlcoholContent({ounces:50, abv:0.14}, 250,'male', 3), 0.0601);
+console.log(bloodAlcoholContent({ounces:20, abv:0.4}, 100,'female', 2), 0.2414);
+
+console.log('\n\r-----CodeWars28');
+var TempleStrings = function(obj, feature) {
+  return obj + ' are ' + feature;
+}
+
+console.log(TempleStrings("Animals","Good"), 'Animals are Good')
+
+console.log('\n\r-----CodeWars29');
+// function maps(x) {
+//   return x.map(function (value) {
+//     return value * 2;
+//   });
+// }
+maps = (x) => x.map(values => values * 2);
+
+console.log(maps([1, 2, 3]), [2, 4, 6]);
+console.log(maps([4, 1, 1, 1, 4]), [8, 2, 2, 2, 8]); 
+console.log(maps([2, 2, 2, 2, 2, 2]), [4, 4, 4, 4, 4, 4]); 
+
+console.log('\n\r-----CodeWars30');
+const toFreud = str => !str ? '' : str.split(' ').map(text => 'sex').join(' ');
+
+console.log(toFreud(""), "");
+console.log(toFreud("test"), "1");
+console.log(toFreud("This is a test"), "4");
+console.log(toFreud("This is a longer test"), "5");
+console.log(toFreud("You're becoming a true freudian expert"), "6");
+
+console.log('\n\r-----CodeWars31');
+function eachCons(array, n) {
+  const result = [];
+  for (let i = 0; i <= array.length - n; i++) {
+    result.push(array.slice(i, i + n))
+  }
+  return result;
+}
+
+console.log(eachCons([3, 5, 8, 13], 2));
+console.log(eachCons([3, 5, 8, 13], 3));
+
+console.log('\n\r-----CodeWars32');
+// function betterThanAverage(classPoints, yourPoints) {
+//   console.log(suma.classPoints);
+//   let classPointsSum = 0;
+//   let classPointsSum2 = 0;
+//   for (let i = 0; i < classPoints.length; i++) {
+//     classPointsSum += classPoints[i];
+//   }
+//   classPointsSum2 = classPointsSum / classPoints.length;
+//   if (classPointsSum2 > yourPoints) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
+
+// const betterThanAverage = (classPoints, yourPoints) => {
+//   const avarage = classPoints.reduce((sum, point) =>sum + point, 0) / classPoints.length;
+//   return avarage < yourPoints
+// };
+
+const betterThanAverage = (classPoints, yourPoints) =>(classPoints.reduce((sum, point) =>sum + point, 0) / classPoints.length) < yourPoints;
+
+console.log(betterThanAverage([2, 3], 5), true);
+console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75), true);
+console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9), false);
+console.log(betterThanAverage([41, 75, 72, 56, 80, 82, 81, 33], 50), false);
+console.log(betterThanAverage([29, 55, 74, 60, 11, 90, 67, 28], 21), false);
