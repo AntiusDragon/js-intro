@@ -695,3 +695,27 @@ console.log(betterThanAverage([100, 40, 34, 57, 29, 72, 57, 88], 75), true);
 console.log(betterThanAverage([12, 23, 34, 45, 56, 67, 78, 89, 90], 9), false);
 console.log(betterThanAverage([41, 75, 72, 56, 80, 82, 81, 33], 50), false);
 console.log(betterThanAverage([29, 55, 74, 60, 11, 90, 67, 28], 21), false);
+
+console.log('\n\r-----CodeWars33');
+const areYouPlayingBanjo = name => name[0].toUpperCase() === 'R' ? `${name} plays banjo` : `${name} does not play banjo`;
+
+console.log(areYouPlayingBanjo("Adam"), "Adam does not play banjo");
+console.log(areYouPlayingBanjo("Paul"), "Paul does not play banjo");
+console.log(areYouPlayingBanjo("Ringo"), "Ringo plays banjo");
+console.log(areYouPlayingBanjo("bravo"), "bravo does not play banjo");
+console.log(areYouPlayingBanjo("rolf"), "rolf plays banjo");
+
+console.log('\n\r-----CodeWars34');
+const getMiddle = s => (s.length % 2) === 0 ? s.slice(((s.length - 1)/ 2), ((s.length / 2) + 1)) : s.at(s.length / 2)
+
+console.log(getMiddle("test"),"es");
+console.log(getMiddle("testing"),"t");
+console.log(getMiddle("middle"),"dd");
+console.log(getMiddle("A"),"A");
+
+console.log('\n\r-----CodeWars35');
+const filter_list = l => 'For input ' + JSON.stringify(l);
+
+console.log(filter_list([1,2,'a','b']),[1,2], 'For input [1,2,"a","b"]');
+console.log(filter_list([1,'a','b',0,15]),[1,0,15], 'For input [1,"a","b",0,15]');
+console.log(filter_list([1,2,'aasf','1','123',123]),[1,2,123], 'For input [1,2,"aasf","1","123",123]');
