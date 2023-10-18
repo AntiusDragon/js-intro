@@ -738,3 +738,21 @@ function between(a, b) {
 
 console.log(between(1, 4)); // [1, 2, 3, 4]
 console.log(between(-2, 2)); // [-2, -1, 0, 1, 2]
+
+console.log('\n\r-----CodeWars38');
+// const positiveSum = arr => arr.map(params => params > 0 ? params : 0).reduce((sum, point) =>sum + point, 0);
+const positiveSum = arr => arr.reduce((a,b)=> a + (b > 0 ? b : 0),0);
+
+console.log(positiveSum([1,2,3,4,5]),15);
+console.log(positiveSum([1,-2,3,4,5]),13);
+console.log(positiveSum([]),0);
+console.log(positiveSum([-1,-2,-3,-4,-5]),0);
+console.log(positiveSum([-1,2,3,4,-5]),9);
+
+console.log('\n\r-----CodeWars39');
+const isDivisible = (n, x, y) => (n % x) === 0 && (n % y) === 0 ? true : false;
+
+console.log(isDivisible(3,3,4),false);
+console.log(isDivisible(12,3,4),true);
+console.log(isDivisible(8,3,4),false);
+console.log(isDivisible(48,3,4),true);

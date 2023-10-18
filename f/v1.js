@@ -194,21 +194,24 @@ Sukurti du kintamuosius. Jiems priskirti savo mylimo aktoriaus vardą ir pavard�
 Sukurti trečią kintamąjį ir jam priskirti stringą, sudarytą iš trijų paskutinių vardo ir pavardės
 kintamųjų raidžių. Jį atspausdinti.
 */
-const aktoriai2 ={
-    vardas1: 'Dzekis Canas',
-    vardas2: 'Krisas Takerjs',
-}
-let vardas2 = '';
-function aktorius(aktoriausName) {
-    vardas2 = aktoriausName.split(' ');
-    return vardas2[0] > vardas2[1] ?vardas2[0] :vardas2[1]
-}
+// const aktoriai2 ={
+//     vardas1: 'Dzekis Canas',
+//     vardas2: 'Krisas Takerjs',
+// }
+// let vardas2 = '';
+// function aktorius(aktoriausName) {
+//     vardas2 = aktoriausName.split(' ');
+//     return vardas2[0] > vardas2[1] ?vardas2[0] :vardas2[1]
+// }
 
 console.log('\n\r-----3.4');
 /*
 Sukurti kintamąjį su stringu: “Once upon a time in hollywood”. Jame visas “o” 
 (didžiąsias ir mažąsias) pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
 */
+const tekstas = text => text.replaceAll('O', '*').replaceAll('o', '*');
+console.log(tekstas('Once upon a time in hollywood'));
+
 
 console.log('\n\r-----3.5');
 /*
