@@ -713,9 +713,28 @@ console.log(getMiddle("testing"),"t");
 console.log(getMiddle("middle"),"dd");
 console.log(getMiddle("A"),"A");
 
-console.log('\n\r-----CodeWars35');
+console.log('\n\r-----CodeWars35'); 
 const filter_list = l => 'For input ' + JSON.stringify(l);
 
 console.log(filter_list([1,2,'a','b']),[1,2], 'For input [1,2,"a","b"]');
 console.log(filter_list([1,'a','b',0,15]),[1,0,15], 'For input [1,"a","b",0,15]');
 console.log(filter_list([1,2,'aasf','1','123',123]),[1,2,123], 'For input [1,2,"aasf","1","123",123]');
+
+console.log('\n\r-----CodeWars36');
+const fakeBin = x => x.split('').map(value => value < 5 ? 0 : 1).join().replaceAll(',', '');
+
+console.log(fakeBin('45385593107843568'), '01011110001100111');
+console.log(fakeBin('509321967506747'), '101000111101101'); 
+console.log(fakeBin('366058562030849490134388085'), '011011110000101010000011011');
+
+console.log('\n\r-----CodeWars37');
+function between(a, b) {
+  var skaiciai = [];
+  for (var i = a; i <= b; i++) {
+    skaiciai.push(i);
+  }
+  return skaiciai;
+}
+
+console.log(between(1, 4)); // [1, 2, 3, 4]
+console.log(between(-2, 2)); // [-2, -1, 0, 1, 2]
