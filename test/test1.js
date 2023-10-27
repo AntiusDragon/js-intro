@@ -756,3 +756,98 @@ console.log(isDivisible(3,3,4),false);
 console.log(isDivisible(12,3,4),true);
 console.log(isDivisible(8,3,4),false);
 console.log(isDivisible(48,3,4),true);
+
+console.log('\n\r-----CodeWars40');
+const twoSort = s => s.sort()[0].split('').join('***');
+
+console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]));
+console.log(twoSort(["turns", "out", "random", "test", "cases", "are", "easier", "than", "writing", "out", "basic", "ones"]));
+
+console.log('\n\r-----CodeWars41');
+function findMultiples(integer, limit) {
+  let a = integer;
+  let multiples = [];
+
+  while (a <= limit) {
+    multiples.push(a);
+    a += integer;
+  }
+  
+  return multiples;
+}
+
+console.log(findMultiples(5, 25), [5, 10, 15, 20, 25])
+console.log(findMultiples(1, 2), [1, 2])
+console.log(findMultiples(5, 7), [5])
+console.log(findMultiples(4, 27), [4, 8, 12, 16, 20, 24])
+console.log(findMultiples(11, 54), [11, 22, 33, 44])
+
+console.log('\n\r-----CodeWars42');
+const chromosomeCheck = sperm => sperm === 'XX' 
+                                          ? "Congratulations! You're going to have a daughter." 
+                                          : "Congratulations! You're going to have a son.";
+
+console.log(chromosomeCheck('XY'), "Congratulations! You're going to have a son.")
+console.log(chromosomeCheck('XX'), "Congratulations! You're going to have a daughter.")
+
+console.log('\n\r-----CodeWars43');
+function billboard(name, price = 30){
+  let sum = 0;
+  for (let i = 0; i < name.length; i++) {
+    sum += price;
+  }
+  return sum
+} 
+
+console.log(billboard("Jeong-Ho Aristotelis"), 600);
+console.log(billboard("Abishai Charalampos"), 570);
+console.log(billboard("Idwal Augustin"), 420);
+console.log(billboard("Hadufuns John",20), 260);
+console.log(billboard("Zoroaster Donnchadh"), 570);
+console.log(billboard("Claude Miljenko"), 450);
+console.log(billboard("Werner Vígi",15), 165);
+console.log(billboard("Anani Fridumar"), 420);
+console.log(billboard("Paolo Oli"), 270);
+console.log(billboard("Hjalmar Liupold",40), 600);
+console.log(billboard("Simon Eadwulf"), 390);
+
+console.log('\n\r-----CodeWars44');
+function array(string) {
+  const explode1 = string.split(',');
+  if (explode1.length < 3) {
+    return null
+  } else {
+    return explode1.slice(1, -1).join(" ");
+  }
+}
+
+console.log(array(''));
+console.log(array('1'));
+console.log(array('A1,B2'));
+console.log(array('1,2,3'));
+console.log(array('1,2,3,4'));
+console.log(array('A1,B2,C3,D4,E5'));
+console.log(array('A,1,23,456,78,9,Z'));
+
+console.log('\n\r-----CodeWars45');
+const whoIsPaying = (name) => name.length > 2 ? [name, name.slice(0, 2) +""] : [name.slice(0, 2) +""];
+
+console.log(whoIsPaying("Mexico"),["Mexico", "Me"]);
+console.log(whoIsPaying("Melania"),["Melania", "Me"]);
+console.log(whoIsPaying("Melissa"),["Melissa", "Me"]);
+console.log(whoIsPaying("Me"),["Me"]);
+console.log(whoIsPaying(""), [""]);
+console.log(whoIsPaying("I"), ["I"]);
+
+console.log('\n\r-----CodeWars46');
+const areaOrPerimeter = (l , w) => w === l ?l * w : (l + w) * 2
+
+// const areaOrPerimeter = (l, w) => w < 10 
+//                                       ? l < 10 
+//                                       ? l * w 
+//                                       : (l + w) * 2 
+//                                       : (l + w) * 2
+
+console.log(areaOrPerimeter(3, 3),  9);
+console.log(areaOrPerimeter(6, 10), 32);
+console.log(areaOrPerimeter(35, 35), 32);
