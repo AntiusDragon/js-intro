@@ -851,3 +851,25 @@ const areaOrPerimeter = (l , w) => w === l ?l * w : (l + w) * 2
 console.log(areaOrPerimeter(3, 3),  9);
 console.log(areaOrPerimeter(6, 10), 32);
 console.log(areaOrPerimeter(35, 35), 32);
+
+console.log('\n\r-----CodeWars47');
+const splitAndMerge = (string, separator) => string.split("").join(separator).replaceAll(separator + ' ' + separator, ' ');
+// const splitAndMerge = (str, sp) => str.split(" ").map(word => word.split("").join(sp)).join(" ");
+
+console.log(splitAndMerge("My name is John"," ") , "M y n a m e i s J o h n");
+console.log(splitAndMerge("My name is John","-") , "M-y n-a-m-e i-s J-o-h-n");
+console.log(splitAndMerge("Hello World!",".") , "H.e.l.l.o W.o.r.l.d.!");
+console.log(splitAndMerge("Hello World!",",") , "H,e,l,l,o W,o,r,l,d,!");
+
+console.log('\n\r-----CodeWars48');
+function strCount(str, letter){  
+  let sum = 0;
+  for (let i = 0; i < str.length; i++) {
+    sum += str[i].includes(letter)
+  }
+  return sum
+}
+
+console.log(strCount('Hello', 'o'), 1);
+console.log(strCount('Hello', 'l'), 2);
+console.log(strCount('',      'z'), 0);
