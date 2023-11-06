@@ -873,3 +873,22 @@ function strCount(str, letter){
 console.log(strCount('Hello', 'o'), 1);
 console.log(strCount('Hello', 'l'), 2);
 console.log(strCount('',      'z'), 0);
+
+console.log('\n\r-----CodeWars49');
+function checkAlive (health) {
+  if (health <= 0) {
+    return false
+  } else { 
+    return true
+  }
+}
+
+console.log(checkAlive(5), true)
+console.log(checkAlive(0), false)
+
+console.log('\n\r-----CodeWars50');
+const masyvas = [1, 2, 3, 4, 5];
+
+masyvas.forEach(function(element) {
+  console.log(element);
+});
