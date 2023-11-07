@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "f:v1": "nodemon ./f/v1.js",
+    "class-exetend": "nodemon ./funkcijos/class-exetend.js",
+    "class": "nodemon ./funkcijos/class.js",
     "destruct": "nodemon ./kintamieji/destruct.js",
     "uzd:pazymiai": "nodemon ./uzd/pazymiai.js",
     "uzd:vardas": "nodemon ./uzd/vardas.js",

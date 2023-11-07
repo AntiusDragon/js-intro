@@ -1,0 +1,22 @@
+# Animals
+- pet
+    - Suo
+     -   constructor: name, furcolor
+     -   methods: introduce, sit, stand, voice
+
+    - Cat
+     -   constructor: name, furcolor
+     -   methods: introduce, sit, stand, voice
+- Parrot
+    -   constructor: name, fatherColor
+    -   methods: introduce, sit, stand, voice, repeatTwice
+- Penguine
+    -   constructor: name, fatherColor, wingsCound
+    -   methods: introduce, voice, canYouFly
+ - Fish
+    - GoldenFish
+          -   constructor: name, color=gold
+         -   methods: introduce, voice, grantAwish
+    - Shark
+         -   constructor: name, color
+         -   methods: introduce, voice, isHungry
