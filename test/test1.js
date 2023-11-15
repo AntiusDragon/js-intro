@@ -900,3 +900,11 @@ const sayHello = ( name, city, state ) => `Hello, ${name.join(' ')}! Welcome to 
 console.log(sayHello(['John', 'Smith'], 'Phoenix', 'Arizona'), 'Hello, John Smith! Welcome to Phoenix, Arizona!')
 console.log(sayHello(['Franklin','Delano','Roosevelt'], 'Chicago', 'Illinois'), 'Hello, Franklin Delano Roosevelt! Welcome to Chicago, Illinois!')
 console.log(sayHello(['Wallace','Russel','Osbourne'],'Albany','New York'), 'Hello, Wallace Russel Osbourne! Welcome to Albany, New York!')
+
+console.log('\n\r-----CodeWars52');
+
+const distinct = a => b = [...new Set(a)];
+
+console.log(distinct([1]), [1]);
+console.log(distinct([1,1,2]), [1,2]);
+console.log(distinct([1,-1,2]), [1,2]);

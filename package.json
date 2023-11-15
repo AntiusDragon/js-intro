@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "map": "nodemon ./metodai/map.js",
     "f:v1": "nodemon ./f/v1.js",
+    "spread": "nodemon ./funkcijos/spread.js",
     "class-exetend": "nodemon ./funkcijos/class-exetend.js",
     "class": "nodemon ./funkcijos/class.js",
     "destruct": "nodemon ./kintamieji/destruct.js",
