@@ -908,3 +908,73 @@ const distinct = a => b = [...new Set(a)];
 console.log(distinct([1]), [1]);
 console.log(distinct([1,1,2]), [1,2]);
 console.log(distinct([1,-1,2]), [1,2]);
+
+console.log('\n\r-----CodeWars53');
+const getASCII = c => c.charCodeAt();
+
+console.log(getASCII('A'),65);
+console.log(getASCII(' '),32);
+console.log(getASCII('!'),33);
+
+console.log('\n\r-----CodeWars54');
+
+function periodIsLate(last, today, cycleLength) {
+  const millisecondsPerDay = 1000 * 60 * 60 * 24;
+  const differenceMs = today - last;
+  const differenceDays = Math.floor(differenceMs / millisecondsPerDay);
+  return differenceDays > cycleLength;
+}
+console.log(periodIsLate(new Date(2016, 6, 13), new Date(2016, 7, 16), 35));
+console.log(periodIsLate(new Date(2016, 6, 13), new Date(2016, 7, 16), 28));
+
+console.log('\n\r-----CodeWars55');
+
+function isDivisible2(a, ...b){
+  for (let i = 0; i < b.length; i++) {
+    if (a % b[i] !== 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(isDivisible2(3,3,4));
+console.log(isDivisible2(12,3,4));
+
+console.log('\n\r-----CodeWars56');
+function buildString(...template){
+  return `I like ${template.join(', ')}!`;
+}
+
+console.log(buildString('Cheese','Milk','Chocolate'), 'I like Cheese, Milk, Chocolate!', 'Return the correct String');
+console.log(buildString('Cheese','Milk'), 'I like Cheese, Milk!', 'Return the correct String');
+console.log(buildString('Chocolate'), 'I like Chocolate!', 'Return the correct String');
+
+console.log('\n\r-----CodeWars57');
+// function doTest(string) {
+
+//   const letterCodes = letters.map(a => a.charCodeAt());
+//   const sum = letterCodes.reduce((total, code) => total + code, 0);
+//   return sum;
+// }
+
+console.log(doTest("", 0));
+console.log(doTest("a", 97));
+console.log(doTest("b", 98));
+console.log(doTest("c", 99));
+console.log(doTest("d", 100));
+console.log(doTest("e", 101));
+console.log(doTest("aaa", 291));
+console.log(doTest("Mary Had A Little Lamb", 1873));
+
+console.log('\n\r-----CodeWars58');
+// const input = '37774034752708817917238923469512665084631649866027591495384628907596331718415424532876151699204777413851021398252603326935878843611287875341554712702331527';
+// const inputA = input.split("")
+// console.log(inputA);
+// for (let i = 0; i < array.length; i++) {
+//   if (condition) {
+    
+//   } else {
+    
+//   }
+// }

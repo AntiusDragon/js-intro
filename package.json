@@ -17,6 +17,7 @@
     "m:array": "nodemon ./metodai/array.js",
     "m:string": "nodemon ./metodai/string.js",
     "m:number": "nodemon ./metodai/number.js",
+    "test2": "nodemon ./test/test2.js",
     "test1": "nodemon ./test/test1.js",
     "object-loops": "nodemon ./ciklas/object-loops.js",
     "array-loops": "nodemon ./ciklas/array-loops.js",
