@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "uzd:poros": "nodemon ./uzd/poros.js",
     "map": "nodemon ./metodai/map.js",
     "f:v1": "nodemon ./f/v1.js",
     "spread": "nodemon ./funkcijos/spread.js",
@@ -17,6 +18,7 @@
     "m:array": "nodemon ./metodai/array.js",
     "m:string": "nodemon ./metodai/string.js",
     "m:number": "nodemon ./metodai/number.js",
+    "test000": "nodemon ./code-wars/test003.js",
     "test2": "nodemon ./test/test2.js",
     "test1": "nodemon ./test/test1.js",
     "object-loops": "nodemon ./ciklas/object-loops.js",

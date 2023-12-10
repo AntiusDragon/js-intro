@@ -958,23 +958,92 @@ console.log('\n\r-----CodeWars57');
 //   return sum;
 // }
 
-console.log(doTest("", 0));
-console.log(doTest("a", 97));
-console.log(doTest("b", 98));
-console.log(doTest("c", 99));
-console.log(doTest("d", 100));
-console.log(doTest("e", 101));
-console.log(doTest("aaa", 291));
-console.log(doTest("Mary Had A Little Lamb", 1873));
+// console.log(doTest("", 0));
+// console.log(doTest("a", 97));
+// console.log(doTest("b", 98));
+// console.log(doTest("c", 99));
+// console.log(doTest("d", 100));
+// console.log(doTest("e", 101));
+// console.log(doTest("aaa", 291));
+// console.log(doTest("Mary Had A Little Lamb", 1873));
 
 console.log('\n\r-----CodeWars58');
-// const input = '37774034752708817917238923469512665084631649866027591495384628907596331718415424532876151699204777413851021398252603326935878843611287875341554712702331527';
-// const inputA = input.split("")
-// console.log(inputA);
-// for (let i = 0; i < array.length; i++) {
-//   if (condition) {
-    
+
+const day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const  whatday58 = (num) => (num > 7 || num < 1) ? "Wrong, please enter a number between 1 and 7" : day.at(num -1);
+
+console.log(whatday58(1),'Sunday')
+console.log(whatday58(2), 'Monday')
+console.log(whatday58(3),'Tuesday')
+console.log(whatday58(7))
+console.log(whatday58(8),  'Wrong, please enter a number between 1 and 7')
+console.log(whatday58(20),  'Wrong, please enter a number between 1 and 7')
+
+console.log('\n\r-----CodeWars59');
+
+const  basicOp = (operation, value1, value2) => eval(`${value1} ${operation} ${value2}`);
+
+console.log(basicOp('+', 4, 7), 11);
+console.log(basicOp('-', 15, 18), -3);
+console.log(basicOp('*', 5, 5), 25);
+console.log(basicOp('/', 49, 7), 7);
+
+console.log('\n\r-----CodeWars59');
+// function areYouPlayingBanjo1(name) {
+//   const r = 'r';
+//   if (name.at(0).toLowerCase() === r) {
+//     return `${name} plays banjo`;
 //   } else {
-    
+//     return `${name} does not play banjo`;
 //   }
 // }
+const areYouPlayingBanjo1 = name => (name.at(0).toLowerCase() === 'r')
+  ? `${name} plays banjo` 
+  : `${name} does not play banjo`;
+
+console.log(areYouPlayingBanjo1("Adam"), "Adam does not play banjo");
+console.log(areYouPlayingBanjo1("Paul"), "Paul does not play banjo");
+console.log(areYouPlayingBanjo1("Ringo"), "Ringo plays banjo");
+console.log(areYouPlayingBanjo1("bravo"), "bravo does not play banjo");
+console.log(areYouPlayingBanjo1("rolf"), "rolf plays banjo");
+
+console.log('\n\r-----CodeWars60');
+function none(array, func) {
+  return !array.some(func);
+}
+
+console.log(none([1,2,3,4,5],function(item){ return item > 5 }), true)
+console.log(none([1,2,3,4,5],function(item){ return item > 4 }), false)
+
+console.log('\n\r-----CodeWars61');
+
+var hotpo = function(n){
+  if(n == 0 || n == 1) {return 0};
+  const asdf = 2
+  let n1 = n;
+  let sum1 = 0;
+  let i = 0;
+  for (const a of i) {
+    if (n1 === 1) {
+      i = 1;
+      return n1 + '_' + sum1
+    } else {
+      if ((n1 % 2) == 0) {
+        n1 = n / 2
+        sum1 += 1
+        i = 0;
+      } else {
+        n1 = 3 * n + 1
+        sum1 += 1
+        // i = 0;
+      }
+    }
+  }
+  return n1
+  // return 16 % 2
+}
+
+console.log(hotpo(1), 0);
+console.log(hotpo(5), 5);
+console.log(hotpo(6), 8);
+console.log(hotpo(23), 15);
